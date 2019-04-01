@@ -8,9 +8,6 @@ The face recognition is carried out as stages first stage the image capturing an
 if not non face, after that the pixels are mapped and checked the face
 
  
-Fig 2. Generating data set
-
-				CHAPTER-4
                                            
    RESULT
 
@@ -25,6 +22,7 @@ To setup opencv in python environment you will need these things ready ( match t
 ⦁	Python 2.7
 ⦁	Open cv 2.x
 ⦁	Numpy library (later will download it using pip)
+
  first download python and install it in its default location (i.e c:/python27)
 after you have installed it download the opencv and extract it, go to “opencv/Build/python/2.7/x86” folder and copy “cv2.pyd” file to “c:/python27/Lib/site-packages/” folder.
 And now we are ready to use opencv in python. just one single problem is there, Opencv uses numpy library for its images so we have to install numpy library too, 
@@ -58,6 +56,8 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = detector.detectMultiScale(gray, 1.3, 5)
     for (x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
+
+
 the above line will get the x,y and height,width of all the faces present in the captured image in a list, So now we have to loop through all the faces and draw rectangle there. the rectangle() the first argument is the input image in which we are going to draw the rectangles, second is the x,y coordinate of the face, then the height and weight, after that we are specifying the color of the line which is in the form of (blue,green,red) and you can adjust the value of each color, the range is 0-255, in this case its a green line, and the last argument is the line thickness
 
  we have marked the faces with green rectangles we can display them
