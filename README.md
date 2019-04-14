@@ -7,6 +7,8 @@ LBPH considers texture descriptor which is useful to symbolize Faces. Because fa
 The face recognition is carried out as stages first stage the image capturing and converting into grey scale then the haar features are checked if the features are their then it is considered as face
 if not non face, after that the pixels are mapped and checked the face
 
+<img src=https://github.com/parasjain929/face_recognition/blob/master/1.PNG />
+
  
   # RESULT
   The face detection and recognition is done using LBPH , the efficiency is up till 72% and the tilling of image is allowed till forty five degrees, the following images are the of face matched or recognized.
