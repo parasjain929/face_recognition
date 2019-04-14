@@ -189,7 +189,7 @@ and it cant handle unknown faces,
         break
    ```     
 we need to close the camera and the windows. and we are done
-``
+```
 cam.release()
 cv2.destroyAllWindows()
 ```
