@@ -1,4 +1,4 @@
-# face_recognition
+# Face_Recognition
 Face Recognition using LBPH and harcascade for Face detection
 LBPH considers texture descriptor which is useful to symbolize Faces. Because face data can be split as compositions of patterns of micro textures. Basically LBPH is carried out in 3 stages they are
 1. Feature extraction,
@@ -8,21 +8,20 @@ The face recognition is carried out as stages first stage the image capturing an
 if not non face, after that the pixels are mapped and checked the face
 
  
-                                           
-   RESULT
-
- The face detection and recognition is done using LBPH , the efficiency is up till 72% and the tilling of image is allowed till forty five degrees, the following images are the of face matched or recognized.
+  # RESULT
+  The face detection and recognition is done using LBPH , the efficiency is up till 72% and the tilling of image is allowed till forty five degrees, the following images are the of face matched or recognized.
 
  
 
 
-CODE EXPLANATION
+# CODE EXPLANATION
 
 To setup opencv in python environment you will need these things ready ( match the versions to follow along with this tutorial),
-⦁	Python 2.7
-⦁	Open cv 2.x
-⦁	Numpy library (later will download it using pip)
-
+<ul>
+ <li>	Python 2.7 </li>
+ <li>  Open cv 2.x </li>
+<li>	Numpy library </li>
+</ul>
  first download python and install it in its default location (i.e c:/python27)
 after you have installed it download the opencv and extract it, go to “opencv/Build/python/2.7/x86” folder and copy “cv2.pyd” file to “c:/python27/Lib/site-packages/” folder.
 And now we are ready to use opencv in python. just one single problem is there, Opencv uses numpy library for its images so we have to install numpy library too, 
